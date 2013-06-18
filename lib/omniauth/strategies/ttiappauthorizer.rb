@@ -15,6 +15,7 @@ module OmniAuth
       info do
         {
           email: raw_info["email"]
+          role: raw_info["role"]
         }
       end
 
