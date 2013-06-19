@@ -7,7 +7,7 @@ module OmniAuth
       option :name, 'ttiappauthorizer'
 
       option :client_options, {
-        site: "http://vanilla-red.herokuapp.com/",
+        site: "http://vanilla-green.herokuapp.com/",
         authorize_url: "/oauth/authorize"
       }
 
