@@ -14,7 +14,7 @@ describe OmniAuth::Strategies::TtiAppAuthorizer do
 
   context "endpoints" do
     it "has correct site" do
-      subject.options.client_options.site.should eq("http://vanilla-red.herokuapp.com")
+      subject.options.client_options.site.should eq("http://localhost:3000")
     end
 
     it "has correct authorize_url" do
