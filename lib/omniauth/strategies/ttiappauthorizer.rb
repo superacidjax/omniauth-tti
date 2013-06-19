@@ -10,7 +10,7 @@ module OmniAuth
         authorize_url: "/oauth/authorize"
       }
 
-      uid { raw_info["id"] }
+      uid { access_token.params[:user_id] }
 
       info do
         {
