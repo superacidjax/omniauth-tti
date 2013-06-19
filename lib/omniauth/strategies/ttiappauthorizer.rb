@@ -19,6 +19,12 @@ module OmniAuth
         }
       end
 
+      extra do
+        {
+          'raw_info' => raw_info
+        }
+      end
+
       def raw_info
         @raw_info ||= access_token.get('/api/v1/me.json').parsed
       end
